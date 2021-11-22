@@ -12,7 +12,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello from React</h1>
+      <form className="search-form">
+        <input className="search-bar" type="text"/>
+        <button className="search-button" type="submit">
+          Search
+        </button>
+      </form>
     </div>
   );
 }
