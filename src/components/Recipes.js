@@ -1,15 +1,16 @@
+import style from './recipes.module.css'
 
 const Recipes = ({title, calories, image, ingredients}) => {
     return(
-        <div>
+        <div className={style.recipes}>
             <h1>{title}</h1>
-            <p>{calories}</p>
-            <ol>
+            <p>Calories: {calories}</p>
+            <ul>
                 {ingredients.map(ingredient => (
-                    <li>{ingredient.text}</li>
+                    <li className={style.text}>{ingredient.text}</li>
                 ))}
-            </ol>
-            <img src={image} alt="" />
+            </ul>
+            <img className={style.image} src={image} alt="" />
         </div>
     )
 }
