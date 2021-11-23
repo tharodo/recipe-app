@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     console.log('Effect has been run!');
-  })
+  }, [])
 
   return (
     <div className="App">
