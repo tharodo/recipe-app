@@ -1,10 +1,10 @@
 
-const Recipes = () => {
+const Recipes = ({title, calories, image}) => {
     return(
         <div>
-            <h1>Title</h1>
-            <p>Calories</p>
-            <img src="" alt="" />
+            <h1>{title}</h1>
+            <p>{calories}</p>
+            <img src={image} alt="" />
         </div>
     )
 }
